@@ -10,7 +10,9 @@ export default defineConfig({
     tsConfigPaths(),
     tailwindcss(),
     tanstackStart(),
-    nitro(),
+    nitro({
+      config: { preset: "vercel" },
+    }),
     viteReact(),
   ],
 });
