@@ -35,7 +35,7 @@ function Index() {
       {/* ═══ HERO ═══ */}
       <section className="relative bg-navy text-white overflow-hidden min-h-[90vh] flex items-center">
         <img src={hero} alt="Luxury yacht at sunset" className="absolute inset-0 w-full h-full object-cover opacity-60" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-t from-navy via-navy/30 to-transparent" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_left,rgba(58,21,21,0.9)_0%,rgba(58,21,21,0.4)_50%,transparent_80%)]" />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-8 py-32 md:py-48 w-full">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 text-gold text-xs tracking-[0.25em] mb-5">
@@ -100,7 +100,7 @@ function Index() {
           </Link>
         </div>
         <div className="relative min-h-[500px]">
-          <img src={about} alt="Yacht deck at sunset" className="absolute inset-0 w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-[1500ms]" width={1200} height={800} loading="lazy" />
+          <img src={about} alt="Yacht deck at sunset" className="absolute inset-0 w-full h-full object-cover grayscale-0 md:grayscale hover:grayscale-0 transition-all duration-[1500ms]" width={1200} height={800} loading="lazy" />
         </div>
       </section>
 
@@ -125,7 +125,7 @@ function Index() {
           <div className="grid md:grid-cols-3 gap-8">
             {news.map((n) => (
               <article key={n.title} className="bg-card border border-border group">
-                <img src={n.img} alt={n.title} className="w-full h-56 object-cover grayscale group-hover:grayscale-0 transition-all duration-[1500ms]" width={800} height={512} loading="lazy" />
+                <img src={n.img} alt={n.title} className="w-full h-56 object-cover grayscale-0 md:grayscale group-hover:grayscale-0 transition-all duration-[1500ms]" width={800} height={512} loading="lazy" />
                 <div className="p-8">
                   <div className="text-primary text-xs tracking-[0.15em] font-semibold mb-3">{n.date}</div>
                   <h3 className="font-serif text-lg font-semibold mb-4 leading-snug">{n.title}</h3>
