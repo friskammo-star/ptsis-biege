@@ -34,8 +34,8 @@ function Index() {
     <SiteLayout>
       {/* ═══ HERO ═══ */}
       <section className="relative bg-navy text-white overflow-hidden min-h-[90vh] flex items-center">
-        <img src={hero} alt="Luxury yacht at sunset" className="absolute inset-0 w-full h-full object-cover opacity-50" width={1920} height={1080} />
-        <div className="absolute inset-0 bg-gradient-to-r from-navy via-navy/80 to-transparent" />
+        <img src={hero} alt="Luxury yacht at sunset" className="absolute inset-0 w-full h-full object-cover opacity-60" width={1920} height={1080} />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_left,rgba(58,21,21,0.9)_0%,rgba(58,21,21,0.4)_50%,transparent_80%)]" />
         <div className="relative max-w-7xl mx-auto px-4 lg:px-8 py-32 md:py-48 w-full">
           <div className="max-w-3xl">
             <div className="flex items-center gap-4 text-gold text-xs tracking-[0.25em] mb-5">
